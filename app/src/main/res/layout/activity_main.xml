@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -36,8 +36,11 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:padding="0dp"
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp" />
 
             <TextView
                 android:id="@+id/a_1"
@@ -49,8 +52,10 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp" />
 
             <TextView
                 android:id="@+id/a_2"
@@ -62,8 +67,10 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp" />
 
         </TableRow>
 
@@ -86,8 +93,10 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
 
             <TextView
                 android:id="@+id/b_1"
@@ -99,8 +108,10 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
 
             <TextView
                 android:id="@+id/b_2"
@@ -112,8 +123,10 @@
                 android:layout_marginBottom="2dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
         </TableRow>
 
         <TableRow
@@ -135,8 +148,10 @@
                 android:layout_marginBottom="0dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
 
             <TextView
                 android:id="@+id/c_1"
@@ -148,8 +163,10 @@
                 android:layout_marginBottom="0dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
 
             <TextView
                 android:id="@+id/c_2"
@@ -161,8 +178,10 @@
                 android:layout_marginBottom="0dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text=""
-                android:textAlignment="center" />
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="60sp"/>
         </TableRow>
 
     </TableLayout>
@@ -203,16 +222,7 @@
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Player One:"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/pointsOne"
-                android:layout_width="58dp"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="X"
+                android:text="Player One = X"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -227,16 +237,7 @@
                 android:layout_width="129dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Player Two:"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/pointsTwo"
-                android:layout_width="58dp"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="O"
+                android:text="Player Two = O"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 

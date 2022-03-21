@@ -1,4 +1,4 @@
-package io.jonpruessmeier.tictactoe
+package io.jonpruessmeier.tictactoe.activities
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import io.jonpruessmeier.tictactoe.R
 
 class StartActivity : AppCompatActivity() {
 
@@ -22,7 +23,7 @@ class StartActivity : AppCompatActivity() {
             var playerTwo: String = nameTwo.text.toString();
 
             if (playerOne == "" || playerTwo == ""){
-                //alertWindow
+
                 val alertDialogBuilder = AlertDialog.Builder(this)
                 alertDialogBuilder.setTitle("No names available")
                 alertDialogBuilder.setMessage("One or both names are missing." +
