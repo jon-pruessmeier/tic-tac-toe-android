@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 TODO: RETURN TO StartActivity!
                  */
                 dialog.cancel();
+                this.finish();
             }
             alertDialogBuilder.show()
         }
