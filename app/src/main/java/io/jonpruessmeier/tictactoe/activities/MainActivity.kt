@@ -80,18 +80,53 @@ class MainActivity : AppCompatActivity() {
         var turnTextView: TextView = findViewById(R.id.turnDisplay);
         turnTextView.text = "It's the turn of $player!";
 
-        for (rows in textViews){
-            for (textView in rows){
-                textView.setOnClickListener {
-                    var view = findViewById<TextView>(it.id);
-                    view.text = map.get(player);
+        for (i in textViews.indices){
 
-                    //switch Players:
-                    if (player == game.getPlayers()[0]){
-                        playRound(game.getPlayers()[1])
-                    } else {
-                        playRound(game.getPlayers()[0]);
+            for (j in textViews[i].indices){
+
+                textViews[i][j].text = this.game.getGameboard().getBoard()[i][j];
+
+                textViews[i][j].setOnClickListener {
+                    var view = findViewById<TextView>(it.id);
+
+                    //just perfom the action if the field is free:
+                    if (view.text == " " && map[player] !== null){
+
+                        //change the text from " " to X or O
+                        view.text = map.get(player);
+                        this.game.updateGameboard(i, j, map[player]!!);
+
+
+                        var win = this.game.checkForWin();
+                        if (win){
+                            val alertDialogBuilder = AlertDialog.Builder(this)
+                            alertDialogBuilder.setTitle("WIN!")
+                            alertDialogBuilder.setMessage("Congratulations $player, you won!");
+                            alertDialogBuilder.setPositiveButton("OK") { dialog, which ->
+                                /*
+                                TODO: RETURN TO StartActivity AND DELETE ALL AVAILABLE DATA!
+                                 */
+                                dialog.cancel();
+                                this.finish();
+                            }
+                            alertDialogBuilder.show()
+
+                        } else {
+
+                            //switch Players:
+                            if (player == game.getPlayers()[0]){
+                                playRound(game.getPlayers()[1])
+                            } else {
+                                playRound(game.getPlayers()[0]);
+                            }
+                        }
+
+
+
                     }
+
+
+
                 }
             }
         }

@@ -8,8 +8,12 @@ class Game (one: String, two: String){
     private var playerTwo: String = two;
     private var round: Int = 0;
 
-    fun updateGameboard(gameboard: Gameboard) {
-        this.gameboard = gameboard;
+    fun updateGameboard(i: Int, j: Int, value: String) {
+        this.gameboard.updateBoard(i, j, value);
+    }
+
+    fun checkForWin(): Boolean{
+        return this.gameboard.checkForWin()
     }
 
     fun getGameboard(): Gameboard{
