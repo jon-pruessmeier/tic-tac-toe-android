@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#F4511E">
+
+            <TextView
+                android:id="@+id/a_0"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/a_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/a_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#F4511E">
+
+            <TextView
+                android:id="@+id/b_0"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/b_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/b_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#F4511E">
+
+            <TextView
+                android:id="@+id/c_0"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/c_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/c_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/turnDisplay"
+        android:layout_width="260dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="76dp"
+        android:gravity="center"
+        android:text="It's XXXXX turn!"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnDisplay">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/playerOne"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Player One:"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pointsOne"
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="X"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/playerTwo"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Player Two:"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pointsTwo"
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="O"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
